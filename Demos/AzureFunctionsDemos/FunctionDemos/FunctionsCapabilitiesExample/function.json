@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "greeting",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "inputTable",
+      "tableName": "OCRTaskInfo",
+      "connection": "alexzdemodashboadstorage_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

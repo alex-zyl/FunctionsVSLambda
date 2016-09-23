@@ -1,0 +1,165 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebJobDemos", "WebJobDemos", "{8F4D3D9C-6790-467E-B9DD-8477057005BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueWebjobSDKDemo", "AzureQueueWebjobSDKDemo\AzureQueueWebjobSDKDemo.csproj", "{F27A553D-64D3-4150-BD5F-6760C111D379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueueWebjobWithoutSDKDemo", "AzureQueueWebjobWithoutSDKDemo\AzureQueueWebjobWithoutSDKDemo.csproj", "{FE492F15-328A-41F9-B2A5-FE96B61AF278}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionsDemos", "FunctionsDemos", "{1FDAD1BE-1C32-4F4A-8316-A37A6BB6B38D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRExtendedService", "OCRExtendedService", "{5E587043-2CCA-4359-A539-0A75ACC4858E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSimpleService", "OCRSimpleService", "{8E89E30D-C1F4-4E85-88C0-9B3208CE0B98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionCapabilitiesExample", "FunctionCapabilitiesExample", "{46DFEBCD-059A-45C8-9288-E39FE25A10F0}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\FunctionsCapabilitiesExample\function.json = FunctionDemos\FunctionsCapabilitiesExample\function.json
+		FunctionDemos\FunctionsCapabilitiesExample\Models.csx = FunctionDemos\FunctionsCapabilitiesExample\Models.csx
+		FunctionDemos\FunctionsCapabilitiesExample\project.json = FunctionDemos\FunctionsCapabilitiesExample\project.json
+		FunctionDemos\FunctionsCapabilitiesExample\run.csx = FunctionDemos\FunctionsCapabilitiesExample\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LocalFunctionExample", "LocalFunctionExample", "{3A9D065D-CA86-4AA1-A13C-2BB00EA374D2}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\LocalFunctionExample\function.json = FunctionDemos\LocalFunctionExample\function.json
+		FunctionDemos\LocalFunctionExample\run.csx = FunctionDemos\LocalFunctionExample\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRImageProcessor", "OCRImageProcessor", "{7F7C14C5-BE40-4E6C-89E7-5A66F75CEBEB}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRImageProcessor\function.json = FunctionDemos\OCRExtendedService\OCRImageProcessor\function.json
+		FunctionDemos\OCRExtendedService\OCRImageProcessor\run.csx = FunctionDemos\OCRExtendedService\OCRImageProcessor\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSasTokenGenerator", "OCRSasTokenGenerator", "{440C4915-0A64-4C61-9FB9-4E1001D0A48A}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRSasTokenGenerator\function.json = FunctionDemos\OCRExtendedService\OCRSasTokenGenerator\function.json
+		FunctionDemos\OCRExtendedService\OCRSasTokenGenerator\run.csx = FunctionDemos\OCRExtendedService\OCRSasTokenGenerator\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSendGridSender", "OCRSendGridSender", "{77EC1D93-ACEA-48DC-B1E2-3F8B73382AA9}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRSendGridSender\function.json = FunctionDemos\OCRExtendedService\OCRSendGridSender\function.json
+		FunctionDemos\OCRExtendedService\OCRSendGridSender\run.csx = FunctionDemos\OCRExtendedService\OCRSendGridSender\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRService", "OCRService", "{1BE2426F-F990-432D-830F-22866133707B}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRService\function.json = FunctionDemos\OCRExtendedService\OCRService\function.json
+		FunctionDemos\OCRExtendedService\OCRService\run.csx = FunctionDemos\OCRExtendedService\OCRService\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRShared", "OCRShared", "{5B1FF7A9-0AC7-41C2-BD4C-027E22762BFB}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRShared\TaskDetails.csx = FunctionDemos\OCRExtendedService\OCRShared\TaskDetails.csx
+		FunctionDemos\OCRExtendedService\OCRShared\TaskStatus.csx = FunctionDemos\OCRExtendedService\OCRShared\TaskStatus.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRStatusChecker", "OCRStatusChecker", "{C2D6C45F-AE76-43D4-87BD-035AC75CF18D}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRStatusChecker\function.json = FunctionDemos\OCRExtendedService\OCRStatusChecker\function.json
+		FunctionDemos\OCRExtendedService\OCRStatusChecker\run.csx = FunctionDemos\OCRExtendedService\OCRStatusChecker\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRTaskPoisonMessageHandler", "OCRTaskPoisonMessageHandler", "{26856830-D49E-4547-BE19-D4553203CFC7}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRTaskPoisonMessageHandler\function.json = FunctionDemos\OCRExtendedService\OCRTaskPoisonMessageHandler\function.json
+		FunctionDemos\OCRExtendedService\OCRTaskPoisonMessageHandler\run.csx = FunctionDemos\OCRExtendedService\OCRTaskPoisonMessageHandler\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRTwilioSender", "OCRTwilioSender", "{0A5081BA-955F-473B-8957-841FD62CA632}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRExtendedService\OCRTwilioSender\function.json = FunctionDemos\OCRExtendedService\OCRTwilioSender\function.json
+		FunctionDemos\OCRExtendedService\OCRTwilioSender\run.csx = FunctionDemos\OCRExtendedService\OCRTwilioSender\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSimpleServiceDemo1", "OCRSimpleServiceDemo1", "{D6199BEB-E72F-450C-A689-B8895A38BFA5}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo1\function.json = FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo1\function.json
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo1\run.csx = FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo1\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSimpleServiceDemo2", "OCRSimpleServiceDemo2", "{C0CCBA32-02C8-4E5C-861C-CC360CEC48BE}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo2\function.json = FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo2\function.json
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo2\run.csx = FunctionDemos\OCRSimpleService\OCRSimpleServiceDemo2\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRSimpleServiceEmailSender", "OCRSimpleServiceEmailSender", "{65AF07A7-1838-439E-98E7-D62A8494A31C}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceEmailSender\function.json = FunctionDemos\OCRSimpleService\OCRSimpleServiceEmailSender\function.json
+		FunctionDemos\OCRSimpleService\OCRSimpleServiceEmailSender\run.csx = FunctionDemos\OCRSimpleService\OCRSimpleServiceEmailSender\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCRStatusChecker", "OCRStatusChecker", "{B94E3D24-E17C-4ACB-AB07-C9C1DB474A78}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionDemos\OCRSimpleService\OCRStatusChecker\function.json = FunctionDemos\OCRSimpleService\OCRStatusChecker\function.json
+		FunctionDemos\OCRSimpleService\OCRStatusChecker\run.csx = FunctionDemos\OCRSimpleService\OCRStatusChecker\run.csx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LambdaDemos", "LambdaDemos", "{A95139F7-20AB-4125-9E88-89EBDE6F2FCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryModel", "BinaryModel\BinaryModel.csproj", "{517ADE83-6945-4734-B03E-92D9FED5DD99}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "LambdaExample", "LambdaExample\LambdaExample.njsproj", "{93A99353-34B5-47FA-87C9-63D274E18909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaInvoker", "LambdaInvoker\LambdaInvoker.csproj", "{8F84A234-0636-4D84-A4DD-50B249B725C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F27A553D-64D3-4150-BD5F-6760C111D379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27A553D-64D3-4150-BD5F-6760C111D379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27A553D-64D3-4150-BD5F-6760C111D379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27A553D-64D3-4150-BD5F-6760C111D379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE492F15-328A-41F9-B2A5-FE96B61AF278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE492F15-328A-41F9-B2A5-FE96B61AF278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE492F15-328A-41F9-B2A5-FE96B61AF278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE492F15-328A-41F9-B2A5-FE96B61AF278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517ADE83-6945-4734-B03E-92D9FED5DD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517ADE83-6945-4734-B03E-92D9FED5DD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517ADE83-6945-4734-B03E-92D9FED5DD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517ADE83-6945-4734-B03E-92D9FED5DD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A99353-34B5-47FA-87C9-63D274E18909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A99353-34B5-47FA-87C9-63D274E18909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A99353-34B5-47FA-87C9-63D274E18909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A99353-34B5-47FA-87C9-63D274E18909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F84A234-0636-4D84-A4DD-50B249B725C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F84A234-0636-4D84-A4DD-50B249B725C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F84A234-0636-4D84-A4DD-50B249B725C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F84A234-0636-4D84-A4DD-50B249B725C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F27A553D-64D3-4150-BD5F-6760C111D379} = {8F4D3D9C-6790-467E-B9DD-8477057005BB}
+		{FE492F15-328A-41F9-B2A5-FE96B61AF278} = {8F4D3D9C-6790-467E-B9DD-8477057005BB}
+		{5E587043-2CCA-4359-A539-0A75ACC4858E} = {1FDAD1BE-1C32-4F4A-8316-A37A6BB6B38D}
+		{8E89E30D-C1F4-4E85-88C0-9B3208CE0B98} = {1FDAD1BE-1C32-4F4A-8316-A37A6BB6B38D}
+		{46DFEBCD-059A-45C8-9288-E39FE25A10F0} = {1FDAD1BE-1C32-4F4A-8316-A37A6BB6B38D}
+		{3A9D065D-CA86-4AA1-A13C-2BB00EA374D2} = {1FDAD1BE-1C32-4F4A-8316-A37A6BB6B38D}
+		{7F7C14C5-BE40-4E6C-89E7-5A66F75CEBEB} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{440C4915-0A64-4C61-9FB9-4E1001D0A48A} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{77EC1D93-ACEA-48DC-B1E2-3F8B73382AA9} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{1BE2426F-F990-432D-830F-22866133707B} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{5B1FF7A9-0AC7-41C2-BD4C-027E22762BFB} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{C2D6C45F-AE76-43D4-87BD-035AC75CF18D} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{26856830-D49E-4547-BE19-D4553203CFC7} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{0A5081BA-955F-473B-8957-841FD62CA632} = {5E587043-2CCA-4359-A539-0A75ACC4858E}
+		{D6199BEB-E72F-450C-A689-B8895A38BFA5} = {8E89E30D-C1F4-4E85-88C0-9B3208CE0B98}
+		{C0CCBA32-02C8-4E5C-861C-CC360CEC48BE} = {8E89E30D-C1F4-4E85-88C0-9B3208CE0B98}
+		{65AF07A7-1838-439E-98E7-D62A8494A31C} = {8E89E30D-C1F4-4E85-88C0-9B3208CE0B98}
+		{B94E3D24-E17C-4ACB-AB07-C9C1DB474A78} = {8E89E30D-C1F4-4E85-88C0-9B3208CE0B98}
+		{517ADE83-6945-4734-B03E-92D9FED5DD99} = {46DFEBCD-059A-45C8-9288-E39FE25A10F0}
+		{93A99353-34B5-47FA-87C9-63D274E18909} = {A95139F7-20AB-4125-9E88-89EBDE6F2FCB}
+		{8F84A234-0636-4D84-A4DD-50B249B725C0} = {A95139F7-20AB-4125-9E88-89EBDE6F2FCB}
+	EndGlobalSection
+EndGlobal

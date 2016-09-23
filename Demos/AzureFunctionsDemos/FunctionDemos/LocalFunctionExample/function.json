@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "queuelocal"
+    },
+    {
+      "type": "table",
+      "name": "tableMessages",
+      "tableName": "tablelocal",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AzureFunctions",
+		"_postman_id": "f2519023-032c-549a-f570-67d8352fca95",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FunctionsAPIHostStatus",
+			"request": {
+				"url": "http://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/admin/host/status",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-functions-key",
+						"value": "o6Uify8ch4S7ymnoP3deYYGQJ8AskFtke7BSLaNhZJOXEJt/z0j3xw==",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OCRServiceRequest",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRService",
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "alex.zyl@outlook.com",
+						"description": ""
+					},
+					{
+						"key": "filename",
+						"value": "test.jpg",
+						"description": ""
+					},
+					{
+						"key": "phone",
+						"value": "+375291377440",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OCRStatusChecker",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRStatusChecker",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"09a335d9-1faf-4f52-a61d-1fb147e5808d\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OCRSimpleServiceDemo1",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRSimpleService",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OCRSimpleServiceDemo2",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRSimpleService",
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "alex.zyl@outlook.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

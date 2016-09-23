@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "name": "task",
+      "direction": "in",
+      "queueName": "ocr-tasks-results",
+      "connection": "alexzdemodashboadstorage_STORAGE"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "direction": "out",
+      "from": "noreply@ocrservice.com"
+    }
+  ],
+  "disabled": false
+}
