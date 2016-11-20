@@ -13,8 +13,8 @@
     },
     {
       "type": "table",
-      "name": "inputTable",
-      "tableName": "inTable",
+      "name": "logs",
+      "tableName": "greetinglogs",
       "connection": "ocrdatastorage-simple",
       "direction": "in"
     }
