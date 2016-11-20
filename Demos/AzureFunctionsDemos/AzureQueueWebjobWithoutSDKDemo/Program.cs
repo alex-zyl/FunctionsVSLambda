@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using System.Configuration;
@@ -72,5 +72,11 @@ namespace AzureQueueWebjobWithoutSDKDemo
             await table.CreateIfNotExistsAsync();
             return table;
         }
+    }
+
+    public class Order : TableEntity
+    {
+        public string Name { get; set; }
+        public string OrderId { get; set; }
     }
 }

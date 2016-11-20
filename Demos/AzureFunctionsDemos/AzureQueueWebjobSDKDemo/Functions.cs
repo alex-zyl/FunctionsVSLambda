@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
+using Microsoft.WindowsAzure.Storage.Table;
 
 namespace AzureQueueWebjobSDKDemo
 {
@@ -13,5 +14,11 @@ namespace AzureQueueWebjobSDKDemo
             order.PartitionKey = Guid.NewGuid().ToString();
             return tableOrder.AddAsync(order);
         }
+    }
+
+    public class Order : TableEntity
+    {
+        public string Name { get; set; }
+        public string OrderId { get; set; }
     }
 }

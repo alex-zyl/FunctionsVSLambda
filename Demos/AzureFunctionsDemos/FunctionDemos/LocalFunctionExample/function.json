@@ -10,7 +10,7 @@
       "type": "table",
       "name": "tableMessages",
       "tableName": "tablelocal",
-      "direction": "out"
+      "direction": "$return"
     }
   ],
   "disabled": false

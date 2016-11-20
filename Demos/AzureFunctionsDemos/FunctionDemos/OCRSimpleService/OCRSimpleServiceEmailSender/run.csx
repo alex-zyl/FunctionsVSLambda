@@ -1,35 +1,39 @@
-#r "SendGridMail"
-#r "Microsoft.WindowsAzure.Storage"
+#r "SendGrid"
 
 using System;
-using SendGrid;
-using Microsoft.WindowsAzure.Storage.Blob;
+using SendGrid.Helpers.Mail;
 
-public static void Run(TaskInfo task, out SendGridMessage message, TraceWriter log)
+public static Mail Run(TaskInfo task, TraceWriter log)
 {
-    if(task.Status == "Failed")
+    var message = new Mail();
+    Content content = new Content
     {
-        message = new SendGridMessage()
-        {
-            Subject = "Online recognition has failed!",
-            Text = string.Format("We're sorry, please try again later")
-        };
+        Type = "text/plain"
+    };
+
+    if (task.Status == "Failed")
+    {
+        message.Subject = "Online recognition has failed!";
+        content.Value = string.Format("We're sorry, please try again later");
     }
     else
     {
-        message = new SendGridMessage()
-        {
-            Subject = "Online recognition has been finished!",
-            Text = string.Format("Result: {0}", task.ResultUri)
-        };
+        message.Subject = "Online recognition has been finished!";
+        content.Value = string.Format("Result: {0}", task.ResultUri);
     }
-    
-    message.AddTo(task.Email);
+
+    var personalization = new Personalization();
+    personalization.AddTo(new Email(task.Email));
+    message.AddPersonalization(personalization);
+    message.AddContent(content);
+
+    return message;
 }
 
 public class TaskInfo
 {
     public string Id {get;set;}
+	public string Status {get;set;}
     public string Email {get;set;}
     public string ResultUri { get; set; }
 }
