@@ -14,8 +14,8 @@
     {
       "type": "table",
       "name": "inputTable",
-      "tableName": "OCRTaskInfo",
-      "connection": "alexzdemodashboadstorage_STORAGE",
+      "tableName": "inTable",
+      "connection": "ocrdatastorage-simple",
       "direction": "in"
     }
   ],
