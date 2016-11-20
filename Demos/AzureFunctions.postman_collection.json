@@ -10,12 +10,12 @@
 		{
 			"name": "FunctionsAPIHostStatus",
 			"request": {
-				"url": "http://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/admin/host/status",
+				"url": "https://alexzmeetupdemofunctionsapp.azurewebsites.net/admin/host/status",
 				"method": "GET",
 				"header": [
 					{
 						"key": "x-functions-key",
-						"value": "o6Uify8ch4S7ymnoP3deYYGQJ8AskFtke7BSLaNhZJOXEJt/z0j3xw==",
+						"value": "ipf2wxMhfCdhpnbkzzMuivHidsJkzCUdm8QhKrGRDeDhtyMx973Rkw==",
 						"description": ""
 					}
 				],
@@ -28,9 +28,34 @@
 			"response": []
 		},
 		{
+			"name": "FunctionsAdminInvocatiin",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsapp.azurewebsites.net/admin/functions/ocrsendgridsender",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-functions-key",
+						"value": "ipf2wxMhfCdhpnbkzzMuivHidsJkzCUdm8QhKrGRDeDhtyMx973Rkw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Input\": \"{\\\"Id\\\":\\\"9a6fa0c6-b93a-43e0-a90d-f4ed655ef825\\\",\\\"Status\\\":\\\"Failed\\\",\\\"UserEmail\\\":\\\"alex.zyl@outlook.com\\\",\\\"UserPhone\\\":\\\"+375291377440\\\"}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "OCRServiceRequest",
 			"request": {
-				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRService",
+				"url": "https://alexzmeetupdemofunctionsapp.azurewebsites.net/api/OCRService",
 				"method": "POST",
 				"header": [
 					{
@@ -60,8 +85,8 @@
 		{
 			"name": "OCRStatusChecker",
 			"request": {
-				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRStatusChecker",
-				"method": "POST",
+				"url": "https://alexzmeetupdemofunctionsapp.azurewebsites.net/api/OCRStatusChecker?id=9a6fa0c6-b93a-43e0-a90d-f4ed655ef825",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -71,7 +96,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"Id\": \"09a335d9-1faf-4f52-a61d-1fb147e5808d\"\n}"
+					"raw": "{\n  \"Id\": \"96c588c1-67a1-4e27-8db6-7c025505cd12\"\n}"
 				},
 				"description": ""
 			},
@@ -106,6 +131,26 @@
 				"body": {
 					"mode": "raw",
 					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OCRSimpleServiceTaskStatus",
+			"request": {
+				"url": "https://alexzmeetupdemofunctionsdashboardapp.azurewebsites.net/api/OCRStatusChecker",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Id\": \"8eab4e7d-19cc-4a8e-92da-09148c919206\"\n}"
 				},
 				"description": ""
 			},

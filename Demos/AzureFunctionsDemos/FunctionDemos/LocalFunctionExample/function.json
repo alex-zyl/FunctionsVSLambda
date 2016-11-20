@@ -8,9 +8,9 @@
     },
     {
       "type": "table",
-      "name": "tableMessages",
+      "name": "entities",
       "tableName": "tablelocal",
-      "direction": "$return"
+      "direction": "out"
     }
   ],
   "disabled": false
