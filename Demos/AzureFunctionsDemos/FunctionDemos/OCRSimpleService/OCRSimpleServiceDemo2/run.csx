@@ -10,7 +10,6 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,
     CloudBlobContainer tasksBlobContainer,
-    IAsyncCollector<TaskInfo> taskStatuses,
     IAsyncCollector<TaskInfo> taskInfoMessages, 
     TraceWriter log)
 {
@@ -59,12 +58,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,
         infoMessage.ResultUri = blob.Uri.AbsoluteUri + token;
     }
     
-    await taskInfos.AddAsync(infoMessage);
     await taskInfoMessages.AddAsync(infoMessage);
 
-    return req.CreateResponse(HttpStatusCode.OK, new {
-        Id = id
-    });
+    return req.CreateResponse(HttpStatusCode.OK);
 }
 
 public class TaskInfo

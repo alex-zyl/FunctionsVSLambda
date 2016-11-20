@@ -15,21 +15,14 @@
       "type": "blob",
       "name": "tasksBlobContainer",
       "path": "ocr-simpletasks-recognized",
-      "connection": "alexzdemodashboadstorage_STORAGE",
+      "connection": "ocrdatastorage-simple",
       "direction": "in"
     },
     {
       "type": "queue",
       "name": "taskInfoMessages",
       "queueName": "ocr-tasks-results",
-      "connection": "alexzdemodashboadstorage_STORAGE",
-      "direction": "out"
-    },
-    {
-      "type": "table",
-      "name": "taskStatuses",
-      "tableName": "ocrtaskstatus",
-      "connection": "alexzdemodashboadstorage_STORAGE",
+      "connection": "ocrdatastorage-simple",
       "direction": "out"
     }
   ],

@@ -5,12 +5,12 @@
       "name": "task",
       "direction": "in",
       "queueName": "ocr-tasks-results",
-      "connection": "alexzdemodashboadstorage_STORAGE"
+      "connection": "ocrdatastorage-simple"
     },
     {
       "type": "sendGrid",
-      "name": "message",
-      "direction": "$return",
+      "name": "$return",
+      "direction": "out",
       "from": "noreply@ocrservice.com",
       "apiKey": "SendGridApiKey"
     }

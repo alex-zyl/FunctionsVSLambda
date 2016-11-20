@@ -11,9 +11,9 @@
     },
     {
       "type": "sendGrid",
-      "name": "message",
+      "name": "$return",
       "from": "noreply@ocrservice.com",
-      "direction": "$return",
+      "direction": "out",
       "apiKey": "SendGridApiKey"
     }
   ],
