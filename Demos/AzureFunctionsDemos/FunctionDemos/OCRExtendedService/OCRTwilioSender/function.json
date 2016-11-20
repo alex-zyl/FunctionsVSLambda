@@ -13,9 +13,7 @@
       "type": "twilioSms",
       "name": "message",
       "from": "+16692310821",
-      "direction": "out",
-      "accountSid": "TwilioAccountSid",
-      "authToken": "TwilioAuthToken"
+      "direction": "out"
     }
   ],
   "disabled": false
