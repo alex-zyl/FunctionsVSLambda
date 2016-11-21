@@ -1,14 +1,9 @@
-﻿console.log('Loading');
+﻿var TestService = require("./Services/TestService");
 
 exports.handler = function (event, context) {
 
-    if (event != null) {
-        console.log('event = ' + JSON.stringify(event));
-    }
-    else {
-        console.log('No event object');
-
-    }
-
+    var service = new TestService();
+    service.processEvent(event);
+    
     context.done(null, 'Hello World');  // SUCCESS with message
 };

@@ -30,6 +30,8 @@ namespace AzureQueueWebjobWithoutSDKDemo
 
             while (true)
             {
+                token.ThrowIfCancellationRequested();
+
                 var messages = await queue.GetMessagesAsync(10, token);
                 if (!messages.Any())
                 {
