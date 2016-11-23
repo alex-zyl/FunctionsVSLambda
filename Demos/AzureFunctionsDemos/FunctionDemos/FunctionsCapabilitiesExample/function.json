@@ -17,6 +17,13 @@
       "tableName": "greetinglogs",
       "connection": "ocrdatastorage-simple",
       "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "logsBlob",
+      "path": "logs-container/{Name}-{rand-guid}",
+      "connection": "ocrdatastorage-simple",
+      "direction": "out"
     }
   ],
   "disabled": false
