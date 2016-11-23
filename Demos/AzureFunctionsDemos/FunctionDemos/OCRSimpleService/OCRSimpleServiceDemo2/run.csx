@@ -26,9 +26,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,
     {
         Id = id,
         Email = email,
-        Status = "Completed",
-        PartitionKey = id,
-        RowKey = id
+        Status = "Completed"
     };
 
     string result = null;
@@ -86,7 +84,7 @@ private static async Task<string> RecognizeAsync(byte[] imageData)
         var strContent = await response.Content.ReadAsStringAsync();
         var root = JsonConvert.DeserializeObject<Rootobject>(strContent);
 
-        if (apiResult.OCRExitCode == 3 || apiResult.OCRExitCode == 4)
+        if (root.OCRExitCode == 3 || root.OCRExitCode == 4)
         {
             throw new Exception("Recognition failed");
         }
